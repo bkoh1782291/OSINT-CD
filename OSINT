@@ -124,6 +124,30 @@ For the full OSINT framework, you can refer to this https://osintframework.com/
            
 
 
+
+# Guidance and Usage of OSINT Tools
+
+[T] = Tool, requires installation or setup
+
+[W] = Website 
+
+Shodan [W]
+
+- https://www.shodan.io/dashboard
+- a tool for searching devices that are connected to the internet, not just connected to web browsers such as google or edge.
+- If the device is connected to the public facing internet, shodan can query it for publicly available information.
+
+
+
+Filter Name                 Description                        Example
+city                        name of the city                   Devices in San Diego   
+country                     2 letter country code              open ports in the US
+
+
+
+
+
+
 Updated: 4/3/2025
 TO DO: 
       - Dark Web OSINT

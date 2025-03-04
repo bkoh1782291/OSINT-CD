@@ -128,23 +128,77 @@ For the full OSINT framework, you can refer to this https://osintframework.com/
 # Guidance and Usage of OSINT Tools
 
 [T] = Tool, requires installation or setup
-
 [W] = Website 
 
-Shodan [W]
+**Shodan [W]**
 
 - https://www.shodan.io/dashboard
 - a tool for searching devices that are connected to the internet, not just connected to web browsers such as google or edge.
 - If the device is connected to the public facing internet, shodan can query it for publicly available information.
 
 
+**theHarvester [T]**
 
-Filter Name                 Description                        Example
-city                        name of the city                   Devices in San Diego   
-country                     2 letter country code              open ports in the US
+- This tool collects information related to target domains and organizations from various search engines, databases, and other publicly available services. This includes subdomains, emails, IP Addresses, hostnames and etc.
+
+**Commonly used options**:
+
+- **d <domain>:** Specifies the domain to search.
+- **b <source>:** Defines the data source (e.g., yahoo, bing, shodan). You can specify multiple sources separated by commas.
+- **l <limit>:** Limit the number of results fetched from the data sources.
+- **f <filename>:** Save the output into a file (in HTML format).
+- **n <enum>:** Perform DNS enumeration using search results.
+- **t:** Perform DNS TLD expansion.
+- **s <start>:** Start with a specific result number (useful when you want to skip initial results).
+- **v <verbose>:** Enable verbose mode for more detailed output.
+
+`theHarvester -d domain.com -b all`
 
 
+**Spiderfoot [T]**
 
+- Automated OSINT scanning tool
+- Tabulates data into a web GUI module that is easy to filter and read. It displays affiliated emails, usernames, addresses, dns records, blacklisted IPs, ssl certificates
+- Available on Kali Linux
+
+`spiderfoot -s <target> -l 127:0:0:1:5001`
+
+Access the IP:Host address to view the Webpage
+
+
+**DNSDumpster [W]**
+
+https://dnsdumpster.com/
+
+- By entering a target domain into DNSDumpster, it performs DNS lookups and presents information such as all the associated subdomains, related IP addresses, and even the geographical locations of the servers.
+
+Key Uses:
+- Subdomain Enumeration
+- DNS Record Lookup
+- Network Mapping
+- Identify Infrastructure
+- Technologies used
+
+
+**IntelligenceX [W]**
+
+- https://intelx.io/
+- **IntelX** analyzes **email addresses**, **domain names**, **IP addresses**, **social media handles**, **documents**, and **historical data** from various public sources. IntelX specializes in searching and analyzing massive datasets from **breaches**, **leaked data**, and **social media**.
+- It can do Sensitive Document Analysis, Domain IP search, Email Address intelligence and leaked data collection.
+
+
+**Skymem [W]**
+
+- https://www.skymem.info/
+- given an email address that has been found from the target domain, use this tool to find further public emails associated to the domain.
+- Works better for enterprise applications.
+
+
+**sn1per [T]**
+- https://github.com/1N3/Sn1per
+- All in One Offensive Security Automation Tool
+- OSINT function available for the tool, utilises other OSINT tools such as `dnsenum` and `theHarvester` to perform OSINT Scanning.
+- Useful for quick and easy scanning, but the results are commandline only and can be messy. 
 
 
 

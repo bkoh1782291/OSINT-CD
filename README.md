@@ -139,6 +139,7 @@ For the full OSINT framework, you can refer to this https://osintframework.com/
 
 **theHarvester [T]**
 
+https://github.com/laramies/theHarvester
 - This tool collects information related to target domains and organizations from various search engines, databases, and other publicly available services. This includes subdomains, emails, IP Addresses, hostnames and etc.
 
 **Commonly used options**:
@@ -157,6 +158,7 @@ For the full OSINT framework, you can refer to this https://osintframework.com/
 
 **Spiderfoot [T]**
 
+https://github.com/smicallef/spiderfoot
 - Automated OSINT scanning tool
 - Tabulates data into a web GUI module that is easy to filter and read. It displays affiliated emails, usernames, addresses, dns records, blacklisted IPs, ssl certificates
 - Available on Kali Linux

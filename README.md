@@ -81,6 +81,23 @@ For the full OSINT framework, you can refer to this https://osintframework.com/
 
 
 
+# Example Findings
+- Port 21 (FTP) which is insecure, is open on most domains
+- Port 110 (Pop3) which is insecure, is open on most domains
+- Port 26 (rsftp) is open `domain.com.my`
+- port 222 (rsh-spx) is open on `domain.com.my`
+- DNS SEC not enabled for `domain.com.my`
+- Port 143 (IMAP) is being used instead of IMAPS for `domain.com.my`
+- Various Subdomains and sensitive hosts found
+- Various Emails and Passwords/Hashes found
+- multiple internal portals for `domain.com.my`
+    - internal mail portal
+    - linux based Warehouse Management portal
+    - calendars, contacts portal
+- Multiple IPs found for `domain.com.my`
+- [localhost](http://localhost) portal found for `domain.com.my`
+- DNS Zone Transfer Vulnerability possible for `domain.com.my`
+- cloud storage bucket (AWS) found for `domain.com.my`
 
 
 
